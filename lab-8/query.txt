@@ -1,0 +1,1 @@
+SELECT onliner_products.name, images.image FROM `onliner_products` LEFT JOIN `images` on onliner_products.images_id = images.id WHERE 1

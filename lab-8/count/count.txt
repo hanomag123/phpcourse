@@ -1,0 +1,6 @@
+SELECT COUNT(onliner_products.name) 
+FROM onliner_products
+INNER JOIN onliner_categories
+ON onliner_products.onliner_categories_id = onliner_categories.id
+GROUP BY onliner_categories.name
+ORDER BY COUNT(onliner_categories.name) DESC
